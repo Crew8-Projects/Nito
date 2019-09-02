@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Nito</string>
+    <string name="default_notification_channel_id">215555555</string>
+
+
+    <string name="login_welcom">Welcome to Nito</string>
+    <string name="login_welcom_singin">Sing in to continue</string>
+
+
+</resources>

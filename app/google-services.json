@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "359321404215",
+    "firebase_url": "https://nito-70ff2.firebaseio.com",
+    "project_id": "nito-70ff2",
+    "storage_bucket": "nito-70ff2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359321404215:android:9a324b38805f9b82",
+        "android_client_info": {
+          "package_name": "crew8.project.nito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359321404215-laibgnhb333dqgv45us57ohns7vposii.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjqadfSk3WcK5L6qkryPd1QGZ3qiMU_Xw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359321404215-laibgnhb333dqgv45us57ohns7vposii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
