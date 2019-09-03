@@ -40,6 +40,7 @@ class HomeTeachersAdapter(val items: ArrayList<Teacher>, val context: Context) :
 
         val requestOptions = RequestOptions()
         requestOptions.placeholder(R.drawable.ic_profile_users)
+        requestOptions.centerCrop()
         requestOptions.error(R.drawable.ic_profile_users)
 
 
