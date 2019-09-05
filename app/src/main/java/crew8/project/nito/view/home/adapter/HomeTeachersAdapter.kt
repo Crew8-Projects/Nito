@@ -34,15 +34,15 @@ class HomeTeachersAdapter(val items: ArrayList<Teacher>, val context: Context) :
     override fun onBindViewHolder(holder: ViewHolderHomeTeachers, position: Int) {
         var itemPostion = items[position]
 
-        var teacherName = ""
+    /*    var teacherName = ""
         teacherName = if(itemPostion.teacherName.length<20){
             itemPostion.teacherName.substring(0,20)
         }else{
             itemPostion.teacherName
         }
+*/
 
-
-        holder.textviewName.text = teacherName
+        holder.textviewName.text = itemPostion.teacherName
         holder.textviewSubject.text = itemPostion.teacherSubject
         holder.textviewClass.text = itemPostion.teacherYear
 
