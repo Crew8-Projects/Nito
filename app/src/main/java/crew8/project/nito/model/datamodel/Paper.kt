@@ -6,7 +6,8 @@ data class Paper(
     var paperID: Int = 0,
     var paperName: String = "",
     var paperType: String = "",
-    var paperTime: String = ""
+    var paperTime: String = "",
+    var paperCoverImage: String = ""
 
 ) {
 }
