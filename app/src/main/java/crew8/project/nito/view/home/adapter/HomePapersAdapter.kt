@@ -87,7 +87,7 @@ class HomePapersAdapter(val items: ArrayList<Paper>, val context: Context) :
         val textviewType = view.textview_home_paper_type
         val textviewTime = view.textview_home_paper_time
 
-        val imageViewCover = view.img_home_teacher
+        val imageViewCover = view.img_home_papers
 
         init {
             view.setOnClickListener(this)

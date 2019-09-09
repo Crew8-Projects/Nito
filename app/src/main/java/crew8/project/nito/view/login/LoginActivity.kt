@@ -94,27 +94,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     }
 
-    private fun showUserDetailsDialog(account: GoogleSignInAccount) {
-        var dialogUserDetails = Dialog(this)
-        dialogUserDetails.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        dialogUserDetails.window!!.setBackgroundDrawableResource(android.R.color.transparent)
-        dialogUserDetails.setCancelable(true)
-
-        var userModelDialog = ViewModelProviders.of(this).get(LoginViewModel::class.java)
-        var bindingDialog: DialogUserSinginBinding = DataBindingUtil.inflate(LayoutInflater.from(this), R.layout.dialog_user_singin, null, false)
-
-
-        dialogUserDetails.setContentView(bindingDialog.root)
-        bindingDialog.login = userModelDialog
-
-
-        bindingDialog.login!!.setUserData(account)
-
-
-
-
-        dialogUserDetails.show()
-    }
 
     override fun onBackPressed() {
         val alertDialogBuilder = AlertDialog.Builder(this)

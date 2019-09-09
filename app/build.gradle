@@ -58,6 +58,10 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:17.0.0'
 
 
+    implementation 'com.google.android.material:material:1.0.0'
+
+
+
     //firabase
     implementation 'com.google.firebase:firebase-core:17.0.0'
     implementation 'com.google.firebase:firebase-messaging:19.0.1'

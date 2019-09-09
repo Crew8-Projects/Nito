@@ -26,7 +26,15 @@ class SplashActivity : AppCompatActivity() {
         textView_appversion.text=getAppVersionRepo()
         val account = GoogleSignIn.getLastSignedInAccount(this)
         Handler().postDelayed(Runnable {
-            if(account==null){
+
+            val intent = Intent(this, HomeActivity::class.java)
+            val bndlanimation = ActivityOptions.makeCustomAnimation(this, R.anim.fade_in, R.anim.fade_out).toBundle()
+            startActivity(intent, bndlanimation)
+            this.finish()
+
+
+
+            /*if(account==null){
                 val intent = Intent(this, LoginActivity::class.java)
                 val bndlanimation = ActivityOptions.makeCustomAnimation(this, R.anim.fade_in, R.anim.fade_out).toBundle()
                 startActivity(intent, bndlanimation)
@@ -36,7 +44,7 @@ class SplashActivity : AppCompatActivity() {
                 val bndlanimation = ActivityOptions.makeCustomAnimation(this, R.anim.fade_in, R.anim.fade_out).toBundle()
                 startActivity(intent, bndlanimation)
                 this.finish()
-            }
+            }*/
 
         }, 3000)
 

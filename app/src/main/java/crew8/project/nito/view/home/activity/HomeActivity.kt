@@ -3,7 +3,9 @@ package crew8.project.nito.view.home.activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import crew8.project.nito.R
@@ -28,6 +30,16 @@ class HomeActivity : AppCompatActivity() {
         userModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_home)
         binding.home = userModel
+
+
+
+
+
+
+        imageview_navigation.setOnClickListener {
+            drawer_layout.openDrawer(GravityCompat.END,true)
+        }
+
 
     }
 
